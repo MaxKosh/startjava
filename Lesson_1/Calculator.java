@@ -2,7 +2,7 @@
 public class Calculator {
 	public static void main(String[] args) {
 		int firstInputNumber = 10;
-		int secondInputNumber = 6;
+		int secondInputNumber = 1;
 		char sign = '^';
 
 		if(sign == '+') {
@@ -14,8 +14,8 @@ public class Calculator {
 		} else if(sign == '/') {
 			System.out.println("Result is: " + ((double)firstInputNumber/secondInputNumber));
 		} else if(sign == '^') {
-			int result = firstInputNumber;
-			for(int i = 2; i <= secondInputNumber; i++) {
+			int result = 1;
+			for(int i = 0; i < secondInputNumber; i++) {
 				result *= firstInputNumber;
 			}
 			System.out.println("Result is: " + result);
