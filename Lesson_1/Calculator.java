@@ -1,42 +1,26 @@
+//Реализация калькулятора без ввода данных через консоль
 public class Calculator {
 	public static void main(String[] args) {
-
-		//Реализация калькулятора без ввода данных через консоль
 		int firstInputNumber = 10;
 		int secondInputNumber = 6;
-		char sign = '%';
-		int result;
-		double devisionResult;
+		char sign = '^';
 
 		if(sign == '+') {
-			result = firstInputNumber + secondInputNumber;
-			System.out.println("Result is: " + result);
-		}
-		else if(sign == '-') {
-			result = firstInputNumber - secondInputNumber;
-			System.out.println("Result is: " + result);
-		}
-		else if(sign == '*') {
-			result = firstInputNumber * secondInputNumber;
-			System.out.println("Result is: " + result);
-		}
-		else if(sign == '/') {
-			devisionResult = (double) firstInputNumber / secondInputNumber;
-			System.out.println("Result is: " + devisionResult);
-		}
-		else if(sign == '^') {
-			result = firstInputNumber;
+			System.out.println("Result is: " + (firstInputNumber + secondInputNumber));
+		} else if(sign == '-') {
+			System.out.println("Result is: " + (firstInputNumber - secondInputNumber));
+		} else if(sign == '*') {
+			System.out.println("Result is: " + (firstInputNumber * secondInputNumber));
+		} else if(sign == '/') {
+			System.out.println("Result is: " + ((double)firstInputNumber/secondInputNumber));
+		} else if(sign == '^') {
+			int result = firstInputNumber;
 			for(int i = 2; i <= secondInputNumber; i++) {
-				result = result * firstInputNumber;
+				result *= firstInputNumber;
 			}
-			
 			System.out.println("Result is: " + result);
+		} else if(sign == '%') {
+			System.out.println("Result is: " + (firstInputNumber % secondInputNumber));
 		}
-		else if(sign == '%') {
-			result = firstInputNumber % secondInputNumber;
-			System.out.println("Result is: " + result);
-
-		}
-
 	}
 }
