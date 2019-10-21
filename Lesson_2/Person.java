@@ -5,29 +5,23 @@ public class Person {
 	int weight = 82;
 	int age = 31;
 
-	public void toWalk() {
+	public void walk() {
 
 	}
 
-	public void toSit() {
+	public void sit() {
 
 	}
 
-	public void toRun() {
+	public void run() {
 
 	}
 
-	public String toTalk() {
+	public String talk() {
 		return "I'm ready to talk with you, man.";
 	}
 
-	public void toLearnJava() {
+	public void learnJava() {
 
-	}
-
-	public static void main(String[] args) {
-		Person manOne = new Person();
-
-		System.out.println(manOne.toTalk());
 	}
 }

@@ -8,16 +8,16 @@ public class WolfTest {
 		wolf.setAge(10);
 		wolf.setColor("grey");
 
-		wolf.toWalk();
-		wolf.toSit();
-		wolf.toRun();
-		wolf.toHunt();
+		wolf.walk();
+		wolf.sit();
+		wolf.run();
+		wolf.hunt();
 
 		System.out.println("Wolf name: " + wolf.getName() + "\nWolf sex: " + wolf.getSex() + 
 			"\nWolf weight: " + wolf.getWeight() + "\nWolf age: " + wolf.getAge() +
 			"\nWolf color: " + wolf.getColor());
 
-		System.out.println("How does " + wolf.getName() + " howl?\n" + wolf.getName() + ": " + wolf.toHowl());
+		System.out.println("How does " + wolf.getName() + " howl?\n" + wolf.getName() + ": " + wolf.howl());
 
 	}
 }
