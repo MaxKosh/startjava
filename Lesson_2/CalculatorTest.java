@@ -4,13 +4,13 @@ public class CalculatorTest {
 	public static void main(String[] args) {
 		Calculator calc = new Calculator();
 		Scanner scan = new Scanner(System.in);
+		String inputAnswer = "Да";
 		
-		boolean isFinished = false;
-		while(true) {
+		while(inputAnswer.equals("Да")) {
 			System.out.print("Введите первое число: ");
 			int firstInputNumber = scan.nextInt();
 
-			String emptyLineKeeper = scan.nextLine(); //фиктивный стринг для того, чтобы отловить \n
+			scan.nextLine();
 
 			System.out.print("Введите знак математической операции: ");
 			String inputSign = scan.nextLine();
@@ -18,27 +18,19 @@ public class CalculatorTest {
 			System.out.print("Введите второе число: ");
 			int secondInputNumber = scan.nextInt();
 
-			calc.mathResult(firstInputNumber, inputSign, secondInputNumber);
+			calc.calculate(firstInputNumber, inputSign, secondInputNumber);
 
-			emptyLineKeeper = scan.nextLine(); //фиктивный стринг для того, чтобы отловить \n
+			scan.nextLine();
 
-			while(true) {
+			while(inputAnswer.equals("Да")) {
 				System.out.print("Хотите продолжить? [Да/Нет]: ");
-				String inputAnswer = scan.nextLine();
+				inputAnswer = scan.nextLine();
 
-				if(inputAnswer.equals("Да")) {
-					break;
-				} else if(inputAnswer.equals("Нет")) {
-					isFinished = true;
+				if(inputAnswer.equals("Да") || inputAnswer.equals("Нет")) {
 					break;
 				} else {
-					continue;
+					inputAnswer = "Да";
 				}
-			}
-
-			if(isFinished) {
-				scan.close();
-				break;
 			}
 		}
 	}

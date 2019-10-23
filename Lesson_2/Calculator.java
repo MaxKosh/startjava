@@ -1,5 +1,5 @@
 public class Calculator {
-	public void mathResult (int firstNumber, String sign, int secondNumber) {
+	public void calculate (int firstNumber, String sign, int secondNumber) {
 		switch(sign) {
 			case ("+"): 
 				System.out.println("Result is: " + (firstNumber + secondNumber));
@@ -18,9 +18,9 @@ public class Calculator {
 				break;
 			case ("^"): 
 				int result = 1;
-					for(int i = 0; i < secondNumber; i++) {
+				for(int i = 0; i < secondNumber; i++) {
 					result *= firstNumber;
-					}
+				}
 				System.out.println("Result is: " + result);
 				break;
 		}
