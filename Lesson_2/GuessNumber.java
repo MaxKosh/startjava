@@ -1,5 +1,3 @@
-
-
 public class GuessNumber {
 	
 	public boolean guess(int inputNumber, int hiddenNumber) {
