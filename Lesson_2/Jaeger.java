@@ -8,20 +8,15 @@ public class Jaeger {
 	private int stregth;
 	private int armor;
 
-	public boolean drift() {
-		return false;
-	}
-
-	public void move() {
-
-	}
-
-	public String scanKaiju() {
-		return "Scanning mode ON";
-	}
-
-	public void useVortexCannon() {
-
+	public Jaeger(String modelName, String mark, String origin, float height, float weight, int speed, int stregth, int armor) {
+		this.modelName = modelName;
+		this.mark = mark;
+		this.origin = origin;
+		this.height = height;
+		this.weight = weight;
+		this.speed = speed;
+		this.stregth = stregth;
+		this.armor = armor;
 	}
 
 	public String getModelName() {
@@ -86,5 +81,21 @@ public class Jaeger {
 
 	public void setArmor(int armor) {
 		this.armor = armor;
+	}
+
+	public boolean drift() {
+		return false;
+	}
+
+	public void move() {
+
+	}
+
+	public String scanKaiju() {
+		return "Scanning mode ON";
+	}
+
+	public void useVortexCannon() {
+
 	}
 }
