@@ -1,16 +1,30 @@
+import java.util.Scanner;
+
 public class GuessNumberTest {
 	public static void main(String[] args) {
-		GuessNumber guessNumber = new GuessNumber();
+		Scanner scan = new Scanner(System.in);
 
-		Player firstPlayer = new Player(guessNumber.enterPlayerName());
-		Player secondPlayer = new Player(guessNumber.enterPlayerName());
+		System.out.print("Введите имя первого игрока: ");
+		Player firstPlayer = new Player(scan.nextLine());
+		System.out.print("Введите имя второго игрока: ");
+		Player secondPlayer = new Player(scan.nextLine());
 
-		while(true) {
-			if(guessNumber.startTheGame(firstPlayer) || guessNumber.startTheGame(secondPlayer)) {
-				if(!guessNumber.repeatTheGame()) {
+		GuessNumber guessNumber = new GuessNumber(firstPlayer, secondPlayer);
+
+		String inputAnswer = "Да";
+		while(inputAnswer.equals("Да")) {
+			guessNumber.startGame();
+
+			while(inputAnswer.equals("Да")) {
+				System.out.print("Хотите продолжить? [Да/Нет]: ");
+				inputAnswer = scan.nextLine();
+
+				if(inputAnswer.equals("Да") || inputAnswer.equals("Нет")) {
 					break;
+				} else {
+					inputAnswer = "Да";
 				}
-			}	
+			}
 		}
 	}
 }
