@@ -21,9 +21,9 @@ public class GuessNumber {
 				scan.nextLine();
 				break;
 			} else if(firstPlayer.getNumber() > hiddenNumber) {
-				System.out.println("Введенное вами число больше того, что загадал компьютер (" + hiddenNumber + ")");
+				System.out.println(firstPlayer.getName() + ", введенное вами число больше того, что загадал компьютер (" + hiddenNumber + ")");
 			} else {
-				System.out.println("Введенное вами число меньше того, что загадал компьютер (" + hiddenNumber + ")");
+				System.out.println(firstPlayer.getName() + ", введенное вами число меньше того, что загадал компьютер (" + hiddenNumber + ")");
 			}
 
 			System.out.print(secondPlayer.getName() + ", введите число от 0 до 100: ");
@@ -33,9 +33,9 @@ public class GuessNumber {
 				scan.nextLine();
 				break;
 			} else if(secondPlayer.getNumber() > hiddenNumber) {
-				System.out.println("Введенное вами число больше того, что загадал компьютер (" + hiddenNumber + ")");
+				System.out.println(secondPlayer.getName() + ", введенное вами число больше того, что загадал компьютер (" + hiddenNumber + ")");
 			} else {
-				System.out.println("Введенное вами число меньше того, что загадал компьютер (" + hiddenNumber + ")");
+				System.out.println(secondPlayer.getName() + ", введенное вами число меньше того, что загадал компьютер (" + hiddenNumber + ")");
 			}
 		}
 	}	
