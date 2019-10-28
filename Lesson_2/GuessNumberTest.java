@@ -15,14 +15,14 @@ public class GuessNumberTest {
 		while(inputAnswer.equals("Да")) {
 			guessNumber.startGame();
 
-			while(inputAnswer.equals("Да")) {
+			while(true) {
 				System.out.print("Хотите продолжить? [Да/Нет]: ");
 				inputAnswer = scan.nextLine();
 
 				if(inputAnswer.equals("Да") || inputAnswer.equals("Нет")) {
 					break;
 				} else {
-					inputAnswer = "Да";
+					continue;
 				}
 			}
 		}
