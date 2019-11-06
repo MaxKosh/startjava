@@ -14,17 +14,13 @@ public class GuessNumberTest {
 		String inputAnswer = "Да";
 		while(inputAnswer.equals("Да")) {
 			guessNumber.startGame();
-
-			while(true) {
-				System.out.print("Хотите продолжить? [Да/Нет]: ");
-				inputAnswer = scan.nextLine();
-
-				if(inputAnswer.equals("Да") || inputAnswer.equals("Нет")) {
-					break;
-				} else {
-					continue;
-				}
-			}
+				do {
+					System.out.print("Хотите продолжить? [Да/Нет]: ");
+					inputAnswer = scan.nextLine();
+					if(inputAnswer.equals("Нет")) {
+						break;
+					}
+				} while(!inputAnswer.equals("Да"));
 		}
 	}
 }
