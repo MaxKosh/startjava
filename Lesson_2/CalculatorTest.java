@@ -22,16 +22,14 @@ public class CalculatorTest {
 
 			scan.nextLine();
 
-			while(inputAnswer.equals("Да")) {
+			do {
 				System.out.print("Хотите продолжить? [Да/Нет]: ");
 				inputAnswer = scan.nextLine();
 
-				if(inputAnswer.equals("Да") || inputAnswer.equals("Нет")) {
+				if(inputAnswer.equals("Нет")) {
 					break;
-				} else {
-					inputAnswer = "Да";
-				}
-			}
+				} 
+			} while(!inputAnswer.equals("Да"));
 		}
 	}
 }
