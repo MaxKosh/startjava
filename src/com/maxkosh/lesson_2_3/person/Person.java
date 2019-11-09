@@ -1,4 +1,4 @@
-package com.maxkosh.Lesson_3.Lesson_2;
+package com.maxkosh.lesson_2_3.person;
 
 public class Person {
  	String name = "Max";

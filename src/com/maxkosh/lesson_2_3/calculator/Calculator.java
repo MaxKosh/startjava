@@ -1,4 +1,4 @@
-package com.maxkosh.Lesson_3.Lesson_2;
+package com.maxkosh.lesson_2_3.calculator;
 
 public class Calculator {
 	public void calculate (int firstNumber, String sign, int secondNumber) {

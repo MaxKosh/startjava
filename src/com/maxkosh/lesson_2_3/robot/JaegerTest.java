@@ -1,4 +1,4 @@
-package com.maxkosh.Lesson_3.Lesson_2;
+package com.maxkosh.lesson_2_3.robot;
 
 public class JaegerTest {
 	public static void main(String[] args) {

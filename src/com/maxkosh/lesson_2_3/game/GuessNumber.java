@@ -1,4 +1,4 @@
-package com.maxkosh.Lesson_3.Lesson_2;
+package com.maxkosh.lesson_2_3.game;
 
 import java.util.Scanner;
 import java.lang.Math;
