@@ -1,3 +1,5 @@
+package com.maxkosh.lesson_1.calculator;
+
 //Реализация калькулятора без ввода данных через консоль
 public class Calculator {
 	public static void main(String[] args) {

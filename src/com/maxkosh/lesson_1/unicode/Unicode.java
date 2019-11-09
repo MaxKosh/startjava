@@ -1,3 +1,5 @@
+package com.maxkosh.lesson_1.unicode;
+
 //вывод в консоль Unicode символов
 public class Unicode {
 	public static void main(String[] args) {

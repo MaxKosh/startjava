@@ -1,3 +1,5 @@
+package com.maxkosh.lesson_1.cycle;
+
 public class Cycle {
 	public static void main(String[] args) {
 		//Выводим все числа от [0, 20]

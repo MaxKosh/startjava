@@ -1,3 +1,5 @@
+package com.maxkosh.lesson_1.variable;
+
 public class Variable {
 	public static void main(String[] args) {
 		byte coresCount = 4;
