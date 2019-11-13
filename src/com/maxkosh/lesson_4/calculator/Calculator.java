@@ -38,18 +38,10 @@ public class Calculator {
 				System.out.println("Result is: " + (firstNumber % secondNumber));
 				break;
 			case '^':
-				pow();
+				System.out.println("Result is: " + (Math.pow((double)firstNumber, (double)secondNumber)));
 				break;
 			default:
 				System.out.println("Ошибка");
 		}
-	}
-
-	private void pow () {
-		int result = 1;
-		for(int i = 0; i < secondNumber; i++) {
-			result *= firstNumber;
-		}
-		System.out.println("Result is: " + result);
 	}
 }
