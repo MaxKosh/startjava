@@ -8,18 +8,19 @@ public class Calculator {
 
 
 	public void setMathExpression(String mathExpression) {
+
 		this.mathExpression = mathExpression;
 	}
 
-	private void expressionParser() {
-		String [] operands = mathExpression.split(" ");
+	private void parseExpression() {
+		String[] operands = mathExpression.split(" ");
 		firstNumber = Integer.parseInt(operands[0]);
 		mathSign = operands[1].charAt(0);
 		secondNumber = Integer.parseInt(operands[2]);
 	}
 
  	public void calculate() {
-		expressionParser();
+		parseExpression();
 
 		switch(mathSign) {
 			case '+':
