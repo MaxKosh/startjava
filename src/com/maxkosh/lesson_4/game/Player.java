@@ -1,24 +1,23 @@
 package com.maxkosh.lesson_4.game;
 
+import java.util.Arrays;
+
 public class Player {
 	private String name;
 	private int triesCount;
-	private int[] inputNumbersArray = new int[10];
-
-	public void setInputNumbersArray (int arraySlot, int inputNumber) {
-		this.inputNumbersArray[arraySlot] = inputNumber;
-	}
-
-	public int[] getInputNumbersArray() {
-		return inputNumbersArray;
-	}
-
-	public int getInputNumbersArray(int arraySlot) {
-		return inputNumbersArray[arraySlot];
-	}
+	int[] inputNumbers = new int[10];
 
 	public Player(String name) {
 		this.name = name;
+	}
+
+	public void setInputNumbers(int index, int inputNumber) {
+		inputNumbers[index] = inputNumber;
+	}
+
+	public int[] getInputNumbers() {
+		int[] copy = Arrays.copyOf(inputNumbers, triesCount);
+		return copy;
 	}
 
 	public String getName() {
