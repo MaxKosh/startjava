@@ -11,13 +11,13 @@ public class Player {
 		this.name = name;
 	}
 
-	public void setInputNumbers(int index, int inputNumber) {
+	public void setInputNumber(int index, int inputNumber) {
 		inputNumbers[index] = inputNumber;
+		triesCount += 1;
 	}
 
 	public int[] getInputNumbers() {
-		int[] copy = Arrays.copyOf(inputNumbers, triesCount);
-		return copy;
+		return Arrays.copyOf(inputNumbers, triesCount);
 	}
 
 	public String getName() {
