@@ -1,5 +1,4 @@
 --querise database
-
 SELECT * FROM Jaegers;
 
 SELECT * FROM Jaegers WHERE status = 'not destroyed';

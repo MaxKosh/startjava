@@ -1,5 +1,4 @@
 -- init database
-
 INSERT INTO Jaegers(modelName, mark, height, weight, status, origin, launch, kaijuKill)
 	VALUES 
 		('Bracer Phoenix', 	'Mark-5', '70.91', '2.128', 'destroyed', 		'MegaTokyo', 	'01-NOV-2025', '1'),
